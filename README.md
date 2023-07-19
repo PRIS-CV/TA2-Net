@@ -1,6 +1,6 @@
 # Task-aware Adaptive Learning for Cross-domain Few-shot Learning
 
-Code release for "Task-aware Adaptive Learning for Cross-domain Few-shot Learning" (ICCV 2023）
+Code release for "Task-aware Adaptive Learning for Cross-domain Few-shot Learning" 
 
 **Abstract**: Although existing few-shot learning works yield promising results for in-domain queries, they still suffer from weak cross-domain generalization. Limited support data requires effective knowledge transfer, but domain-shift makes this harder.  Towards this emerging challenge, researchers improved adaptation by introducing task-specific parameters, which are directly optimized and estimated for each task. However, adding a fixed number of additional parameters fails to consider the diverse domain shifts between target tasks and the source domain, limiting efficacy. In this paper, we first observe the dependence of task-specific parameter configuration on the target task. 
 Abundant task-specific parameters may over-fit, and insufficient task-specific parameters may result in under-adaptation -- but the optimal task-specific configuration varies for different test tasks.
