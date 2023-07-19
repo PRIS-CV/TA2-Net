@@ -80,7 +80,7 @@ def meta_val(model_agent, valsets, trainsets, val_loader, session):
             lr = 0.05
             lr_beta = 0.1
         else:
-            lr = 0.5
+            lr = 2
             lr_beta = 1
 
         val_losses, val_accs = [], []
