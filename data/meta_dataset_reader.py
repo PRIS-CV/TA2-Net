@@ -180,8 +180,8 @@ class MetaDatasetEpisodeReader(MetaDatasetReader):
                     self.validation_set_dict[item] = next_task
 
             if mode == 'test':
-                test_episode_desscription = config.EpisodeDescriptionConfig(None, 5, None,  min_ways=5, max_ways_upper_bound=5, max_num_query=10,max_support_size_contrib_per_class=5)
-               # test_episode_desscription = config.EpisodeDescriptionConfig(None, 5, None)
+               # test_episode_desscription = config.EpisodeDescriptionConfig(None, 5, None,  min_ways=5, max_ways_upper_bound=5, max_num_query=10,max_support_size_contrib_per_class=5)
+                test_episode_desscription = config.EpisodeDescriptionConfig(None, 5, None)
 
                 for item in test_set:
                     next_task = self._init_single_source_dataset(
