@@ -1,19 +1,7 @@
 """
-This code allows you to evaluate performance of a single feature extractor + tsa with NCC
+This code allows you to evaluate performance of TA^2-Net with NCC
 on the test splits of all datasets (ilsvrc_2012, omniglot, aircraft, cu_birds, dtd, quickdraw, fungi, 
 vgg_flower, traffic_sign, mscoco, mnist, cifar10, cifar100). 
-
-To test the url model with residual adapters in matrix form and pre-classifier alignment
-on the test splits of all datasets, run:
-python test_extractor_tsa.py --model.name=url --model.dir ./saved_results/url -test.tsa-ad-type residual \
---test.tsa-ad-form matrix --test.tsa-opt alpha+beta --test.tsa-init eye
-
-To test the url model with residual adapters in matrix form and pre-classifier alignment
-on the test splits of ilsrvc_2012, dtd, vgg_flower, quickdraw,
-comment the line 'testsets = ALL_METADATASET_NAMES' and run:
-python test_extractor_tsa.py --model.name=url --model.dir ./saved_results/url -test.tsa-ad-type residual \
---test.tsa-ad-form matrix --test.tsa-opt alpha+beta --test.tsa-init eye \
--data.test ilsrvc_2012 dtd vgg_flower quickdraw
 """
 
 import os
@@ -259,7 +247,7 @@ def main():
     config = tf.compat.v1.ConfigProto()
     config.gpu_options.allow_growth = False
 
-    '''
+    
     with tf.compat.v1.Session(config=config) as session:
         
             loss_all = 0.0 
@@ -314,7 +302,7 @@ def main():
                                              state_dict=model_agent.get_state_dict(), extra=extra_dict)
 
                     model_agent.train()
-        '''
+        
     test(trainsets, model_agent)
                     
 
