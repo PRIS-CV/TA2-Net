@@ -33,7 +33,7 @@ You may refer to this [repo](https://github.com/VICO-UoE/URL) to download the da
     Note the above commands need to be run every time you open a new command shell.
 
 ## Training
-
+-  load the pre-trained backbone before training
 - `bash scripts/meta_train_resnet18_TA2_Net.sh` for training the proposed TA^2-Net
  
 
