@@ -203,7 +203,7 @@ def test(trainsets, model_agent):
     print("\n")
 
 def main():
-    TEST_SIZE = 1000000
+    TEST_SIZE = 10000
 
     best_val_loss = 999999999
     best_val_acc = 0
